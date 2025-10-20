@@ -1,118 +1,32 @@
-.app {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  font-family: 'Arial', sans-serif;
-  padding: 20px;
-}
-
-.profile-container {
-  background: white;
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 500px;
-  width: 100%;
-}
-
-.profile-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.profile-header h1 {
-  color: #333;
-  margin: 0;
-  font-size: 1.8rem;
-}
-
-.edit-btn, .save-btn, .cancel-btn {
-  background: #667eea;
+.loading {
   color: white;
-  border: none;
-  padding: 10px 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 50px;
+}
+
+.message {
+  background: #e7f3ff;
+  border: 1px solid #b3d9ff;
   border-radius: 8px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: background 0.3s;
-}
-
-.edit-btn:hover, .save-btn:hover {
-  background: #5a6fd8;
-}
-
-.cancel-btn {
-  background: #6c757d;
-  margin-left: 10px;
-}
-
-.cancel-btn:hover {
-  background: #5a6268;
-}
-
-.profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto 20px;
-  border: 4px solid #667eea;
-  position: relative;
-}
-
-.profile-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.edit-input {
-  width: 100%;
   padding: 10px;
-  margin: 5px 0;
-  border: 2px solid #e1e5e9;
-  border-radius: 8px;
-  font-size: 1rem;
-  box-sizing: border-box;
+  margin: 10px 0;
+  text-align: center;
+  color: #0066cc;
 }
 
-.edit-input:focus {
-  outline: none;
-  border-color: #667eea;
+.data-source {
+  margin-top: 10px;
+  color: #888;
+  font-style: italic;
 }
 
-.profile-info h1 {
-  color: #333;
-  margin: 20px 0 10px 0;
-  font-size: 2.5rem;
+.save-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
 }
 
-.profile-info p {
-  color: #666;
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-.button-group {
-  margin-top: 20px;
-}
-
-@media (max-width: 480px) {
-  .profile-container {
-    padding: 30px 20px;
-  }
-  
-  .profile-info h1 {
-    font-size: 2rem;
-  }
-  
-  .profile-header {
-    flex-direction: column;
-    gap: 15px;
-  }
+.edit-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
 }
